@@ -205,8 +205,6 @@ img {
   line-height: 24px;
 }
 
-
-
 .popular-section__link:hover{
   color: var(--font-color-white);
   background-color: var(--bg-color-orange);
