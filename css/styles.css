@@ -1,12 +1,15 @@
 :root {
-  
-  --font-color-black:#170C04;
-  --font-color-orange:#E27B3A;
-  --bg-color-orange:#E27B3A;
-  --font-color-white:#fff;
-  --font-poppins:"Poppins","Arial",sans-serif;
-  --font-roboto:"Roboto","Arial",sans-serif;
-  --bg-color-purple:#FCF2EB;
+
+
+--font-color-black:#170C04;
+--font-color-orange:#E27B3A;
+--bg-color-orange:#E27B3A;
+--font-color-white:#fff;
+--font-poppins:"Poppins","Arial",sans-serif;
+--font-roboto:"Roboto","Arial",sans-serif;
+--bg-color-purple:#FCF2EB;
+
+
 }
 
 html {
@@ -26,7 +29,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: ______;
+/*   font-family: ______; */
   background-color: #fff;
 }
 
@@ -54,6 +57,136 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* TODO HEADER  */
+
+.header__container {
+  padding: 30px 0;
+}
+
+.nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.nav__list--text {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav__link--text {
+  text-decoration: none;
+  color: var(--font-color-black);
+  font-family: var(--font-roboto);
+
+}
+.nav__link--text:hover {
+
+color: var(--font-color-orange);
+
+}
+
+.nav__list--text li:not(:last-child) {
+  margin-right: 55px;
+
+}
+
+.nav__list--icon {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav__list--icon li:not(:last-child) {
+  margin-right: 40px;
+
+}
+
+
+
+/* TODO HERO  */
+
+
+.header-hero {
+  background-image: url("../img/img-bg-square-orange.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(50% + 690px) center;
+  width: 100%;
+}
+
+
+.hero__container {
+  padding: 140px 0;
+background-image: url("../img/img-dog.png");
+background-repeat: no-repeat;
+background-position: calc(50% + 260px) calc(50% + 20px);
+background-size: 920px 610px;
+}
+
+.hero__title {
+  margin: 0;
+  font-family: var(--font-poppins);
+font-style: normal;
+font-weight: bold;
+font-size: 100px;
+line-height: 120px;
+color: var(--font-color-black);
+width: 613px;
+margin-right: auto;
+margin-bottom: 90px;
+}
+
+
+.button {
+  text-decoration: none;
+  padding: 12px 30px;
+  border: 1px solid transparent;
+background-color: transparent;
+}
+
+.button--orange {
+  background-color: var(--bg-color-orange);
+  border-radius: 24px;
+  color: var(--font-color-white);
+}
+
+.button--orange:hover {
+  background-color: var(--font-color-white);
+  color: var(--font-color-orange);
+  border-color: var(--bg-color-orange);
+
+}
+
+.button--white {
+  background-color: var(--font-color-white);
+  border-radius: 24px;
+  color: var(--font-color-orange);
+  border-color: var(--bg-color-orange);
+
+}
+
+.button--white:hover {
+
+  border-color: transparent;
+  background-color: var(--bg-color-orange);
+  color: var(--font-color-white);
+}
+
+.hero__button {
+  margin-right: 20px;
+}
+
+.hero__img {
+  width: 900px;
+}
+
 
 /* POPULAR SECTION */
 
@@ -211,6 +344,4 @@ img {
   color: var(--font-color-white);
   background-color: var(--bg-color-orange);
 }
-
-
 
